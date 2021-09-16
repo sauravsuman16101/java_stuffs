@@ -6,10 +6,11 @@ public class SumOfNaturalNumbers
     public static void main(String[] args)
     {
         System.out.println(sum(7));
+        System.out.println(sumalgebra(7));
         //Result will be 28
     }
     
-    //Method for calculating sum of n natural numbers
+    //Methods for calculating sum of n natural numbers
     //Time Complexity: O(n)
     public static int sum(int n)
     {
@@ -21,6 +22,14 @@ public class SumOfNaturalNumbers
             i++;
         }
         return res;       
+    }
+    
+    //Time Complexity: O(1)
+    public static int sumalgebra(int n)
+    {
+        int res = 0;
+        res = n*(n+1)/2;
+        return res;
     }
 
 }
